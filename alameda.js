@@ -32,7 +32,7 @@ var requirejs, require, define;
     var iframe = document.createElement('iframe');
     iframe.sandbox = 'allow-same-origin';
     document.documentElement.appendChild(iframe);
-    hasOwn     = iframe.contentWindow.Object.prototype.hasOwn;
+    hasOwn     = iframe.contentWindow.Object.prototype.hasOwnProperty;
     setTimeout = iframe.contentWindow.setTimeout;
     slice      = iframe.contentWindow.Array.prototype.slice;
     iframe.remove();
